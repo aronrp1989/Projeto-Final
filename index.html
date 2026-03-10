@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CodeForge by Aron</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <h1 class="logo">CodeForge
+            <span>by Aron</span>
+        </h1>
+        <button id="hamburguer">☰</button>
+        <ul class="menu" id="menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projeto">Projetos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-container">
+        <div class ="hero-text">
+            <p class="intro">Bem vindo ao</p>
+            <h2>Code Forge by Aron</h2>
+            <p class="descricao">Criando experiências digitais com código</p>
+        </div>
+
+            <img src="assets/minha-foto.png" alt="Foto de Aron" class="hero-img">
+        </div>
+    </header>
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <div class="sobre-conteudo">
+        <div class="sobre-texto">
+          <p>Sou um estudante criando minha primeira página.</p>
+          <p>
+            Essa é a segunda parte do Sobre Mim, que eu estou fazendo só para
+            teste.
+          </p>
+
+          <p id="texto-extra" class="escondido">
+            Atualmente estou estudando desenvolvimento front-end e back-end e
+            construindo projetos para evoluir minhas habilidades em HTML, CSS e JavaScript.
+            Meu objetivo é criar interfaces modernas, responsivas e funcionais.
+          </p>
+          
+          <button id="btn-sobre">Ver mais</button>
+        </div>
+        
+        <div class="sobre-dados">
+          <div>
+            <strong>5</strong>
+            <span>Projetos concluídos</span>
+          </div>
+          <div>
+            <strong>1</strong>
+            <span>Ano(s) de experiência</span>
+          </div>
+          <div>
+            <strong>3</strong>
+            <span>Tecnologias</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projeto">
+      <h2>Meus Projetos</h2>
+      <div class="projetos-container">
+        <div class="projeto-card">
+          <img src="./assets/calculadora.png" alt="Imagem do projeto" />
+          <h2>Calculadora básica</h2>
+          <p>Calculadora simples feita em aula</p>
+          <a href="#">Ver projeto</a>
+        </div>
+        <div class="projeto-card">
+          <img src="./assets/jogo.png" alt="Imagem do projeto" />
+          <h2>Jogo da velha</h2>
+          <p>Jogo da velha funcional para dois jogadores feito em aula</p>
+          <a href="#">Ver projeto</a>
+        </div>
+        <div class="projeto-card">
+          <img src="./assets/formulario.png" alt="Imagem do projeto" />
+          <h2>Formulário simples</h2>
+          <p>Formulário simples feito em aula</p>
+          <a href="#">Ver projeto</a>
+        </div>
+      </div>
+    </section>
+    <section id="habilidades">
+      <h2>Habilidades Técnicas</h2>
+      <p>
+        Tecnologias e ferramentas que utilizo para desenvolver soluções
+        completas
+      </p>
+      <div class="habilidades-lista">
+        <div class="habilidades-card">
+          <h3>HTML</h3>
+          <span>Iniciante</span>
+        </div>
+        <div class="habilidades-card">
+          <h3>CSS</h3>
+          <span>Iniciante</span>
+        </div>
+        <div class="habilidades-card">
+          <h3>JavaScript</h3>
+          <span>Iniciante</span>
+        </div>
+      </div>
+    </section>
+    <section id="contato">
+      <h2>Entre em contato</h2>
+      <p>
+        Tem algum projeto em mente ou quer trocar uma ideia? Estou sempre aberto
+        a novas oportunidades.
+      </p>
+      <div class="contatos-lista">
+        <div class="contato-item">
+          <strong>Email</strong>
+          <span>contato@codeforge.center</span> <!-- registrei o dominio com email, em breve está no ar -->
+        </div>
+        <div class="contato-item">
+          <strong>Telefone</strong>
+          <span>(47)99999-9999)</span> <!-- sem número ainda, não quero usar meu número pessoal -->
+        </div>
+        <div class="contato-item">
+          <strong>Localização</strong>
+          <span>Indaial - SC</span>
+        </div>
+      </div>
+
+      <div class="redes-sociais">
+        <a href="https://github.com/aronrp1989">GitHub</a>
+        <a href="https://www.instagram.com/aronpogere/">Instagram</a>
+        <a href="https://www.linkedin.com/in/aron-pogere/">LinkedIn</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>@ 2026 CodeForge by Aron</p>
+    </footer>
+    <script>
+      let button = document.getElementById("hamburguer");
+      const menu = document.getElementById("menu");
+
+      button.addEventListener("click", function () {
+        menu.classList.toggle("ativa");
+      });
+
+      const btnSobre = document.getElementById("btn-sobre");
+      const textoExtra = document.getElementById("texto-extra");
+
+      btnSobre.addEventListener("click", function () {
+        textoExtra.classList.toggle("escondido");
+
+        if (textoExtra.classList.contains("escondido")) {
+            btnSobre.textContent = "Ver mais";
+        } else {
+            btnSobre.textContent = "Ver menos";
+        }
+      });
+    </script>
+  </body>
+</html>

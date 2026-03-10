@@ -36,16 +36,20 @@
       <h2>Sobre mim</h2>
       <div class="sobre-conteudo">
         <div class="sobre-texto">
-          <p>Sou um estudante criando minha primeira página.</p>
+          <p>Olá, me chamo Aron Raphael Pogere. Sou tradutor em transição para a área de tecnologia
+            e estudante de Desenvolvimento de Software, apaixonado por inovação e pela criação de
+            soluções digitais.</p>
           <p>
-            Essa é a segunda parte do Sobre Mim, que eu estou fazendo só para
-            teste.
+            Atualmente, estou focado nos estudos de desenvolvimento Front-end e Back-end, construindo
+            projetos práticos para aprimorar minhas habilidades em HTML, CSS e JavaScript. Gosto de
+            transformar ideias em interfaces funcionais, modernas e bem estruturadas.
           </p>
 
           <p id="texto-extra" class="escondido">
-            Atualmente estou estudando desenvolvimento front-end e back-end e
-            construindo projetos para evoluir minhas habilidades em HTML, CSS e JavaScript.
-            Meu objetivo é criar interfaces modernas, responsivas e funcionais.
+            Meu objetivo é me tornar um desenvolvedor completo, capaz de criar aplicações performáticas,
+            intuitivas e visualmente atraentes. Busco evoluir continuamente minhas habilidades técnicas
+            e colaborar em projetos desafiadores que impulsionem meu crescimento profissional. Sou
+            dedicado, organizado e estou sempre em busca de aprender novas tecnologias.
           </p>
           
           <button id="btn-sobre">Ver mais</button>
@@ -124,7 +128,7 @@
         </div>
         <div class="contato-item">
           <strong>Telefone</strong>
-          <span>(47)99999-9999)</span> <!-- sem número ainda, não quero usar meu número pessoal -->
+          <span>(47)99999-9999</span> <!-- sem número ainda, não quero usar meu número pessoal -->
         </div>
         <div class="contato-item">
           <strong>Localização</strong>
@@ -142,26 +146,7 @@
     <footer class="footer">
       <p>@ 2026 CodeForge by Aron</p>
     </footer>
-    <script>
-      let button = document.getElementById("hamburguer");
-      const menu = document.getElementById("menu");
 
-      button.addEventListener("click", function () {
-        menu.classList.toggle("ativa");
-      });
-
-      const btnSobre = document.getElementById("btn-sobre");
-      const textoExtra = document.getElementById("texto-extra");
-
-      btnSobre.addEventListener("click", function () {
-        textoExtra.classList.toggle("escondido");
-
-        if (textoExtra.classList.contains("escondido")) {
-            btnSobre.textContent = "Ver mais";
-        } else {
-            btnSobre.textContent = "Ver menos";
-        }
-      });
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>

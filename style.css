@@ -385,31 +385,60 @@ li {
 @media (max-width: 768px) {
   #hamburguer {
     display: block;
+    font-size: 28px;
+    background: transparent;
+    border: none;
+    color: #ffd500;
+    cursor: pointer;
+    z-index: 1001;
   }
-
-  .menu {
-    position: absolute;
-    top: 70px;
-    right: 40px;
-    gap: 15px;
-    background: #111;
-    flex-direction: column;
-    display: none;
-  }
-
-  .menu.ativa {
-    display: flex;
-  }
-}
-
-@media (max-width: 768px) {
 
   .logo {
     margin-left: 20px;
   }
 
+  .navbar {
+    padding: 20px;
+  }
+
   .menu {
-    margin-right: 20px;
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    gap: 18px;
+    background: #000814;
+    padding: 18px 20px;
+    border: 1px solid #ffd500;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px #000814;
+    margin-right: 0;
+    min-width: 180px;
+    z-index: 1000;
+  }
+
+  .menu li {
+    width: 100%;
+  }
+
+  .menu a {
+    display: block;
+    width: 100%;
+    color: #E5E5E5;
+    font-size: 1.1em;
+    padding: 8px 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+
+  .menu a:hover {
+    background: #ffd500;
+    color: #000814;
+  }
+
+  .menu.ativa {
+    display: flex;
   }
 
   .hero {
